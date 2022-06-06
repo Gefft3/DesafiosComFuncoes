@@ -18,7 +18,6 @@ def maiorPrimo(r):
 
 n = int(input())
 p = 2
-lista = ''
 while n>1 and p<=n:
     if n%p==0:
         n = n//p
