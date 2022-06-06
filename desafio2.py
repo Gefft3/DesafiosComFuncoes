@@ -19,13 +19,8 @@ def maiorPrimo(r):
 n = int(input())
 p = 2
 lista = ''
-while n!=1:
+while n>1 and p<=n:
     if n%p==0:
-        n = n/p
-        lista += str(p)
-    else:
-        p = maiorPrimo(p)
-lista = (sorted((set(list(lista)))))
-for i in range(len(lista)):
-    print(lista[i],end=' ')
-                
+        n = n//p
+        print(p, end=' ')
+    p = maiorPrimo(p)
